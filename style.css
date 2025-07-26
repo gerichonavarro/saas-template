@@ -1,0 +1,62 @@
+/* Custom CSS for SaaS Landing Page Template */
+
+/* Set Inter font globally */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom button hover effects */
+button {
+  transition: all 0.3s ease;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add fade-in animation to sections */
+section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom focus styles for accessibility */
+button:focus {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+}
+
+/* Custom gradient background for hero section (optional) */
+.hero-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Custom shadow for cards */
+.card-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive text scaling */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+}
+
+/* Custom utilities */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
